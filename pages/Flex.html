@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Flex Sample </title>
+        <style>
+            body {padding: 2em;}
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                color: white;
+                padding: 10px;
+            }
+
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .mainContentItem {
+                text-align: left;
+                background: deepskyblue;
+                flex: 3 10px;
+                order: 2;
+            }
+
+            article {
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+            .sideBarLeftItem { 
+                background: gold;
+                order: 1;
+            }
+            .sideBarRightItem { 
+                background: hotpink;
+                order: 3;
+            }
+
+            .sideBarItem {
+                flex: 1 0 0;
+                border: 0px solid green;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <header class = "headerContainer"><h1>HEADER - SAMPLE FLEXBOX</h1></header>
+        <div class= "mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>ARTICLE 1</h2>
+                    <p>A black hole is a region of spacetime where gravity is so strong that nothing—no particles or even electromagnetic radiation such as light—can escape from it.[1] The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.[2][3]</p>
+                </article>
+                <article>
+                    <h2>ARTICLE 2</h2>
+                    <p>The boundary of the region from which no escape is possible is called the event horizon. Although the event horizon has an enormous effect on the fate and circumstances of an object crossing it, according to general relativity it has no locally detectable features.[4] In many ways, a black hole acts like an ideal black body, as it reflects no light.[5][6] Moreover, quantum field theory in curved spacetime predicts that event horizons emit Hawking radiation, with the same spectrum as a black body of a temperature inversely proportional to its mass. This temperature is on the order of billionths of a kelvin for black holes of stellar mass, making it essentially impossible to observe.</p>
+                </article>
+                <article>
+                    <h2>ARTICLE 3</h2>
+                    <p>Black holes of stellar mass are expected to form when very massive stars collapse at the end of their life cycle. After a black hole has formed, it can continue to grow by absorbing mass from its surroundings. By absorbing other stars and merging with other black holes, supermassive black holes of millions of solar masses (M☉) may form. There is consensus that supermassive black holes exist in the centers of most galaxies.</p>
+                </article>
+
+            </section>
+            <sidebar class="sideBarItem sideBarLeftItem"><div class="center"><p>LEFT SIDE BAR</p></div></sidebar>
+            <sidebar class="sideBarItem sideBarRightItem"><div class="center"><p>RIGHT SIDE BAR</p></div></sidebar>
+        </div>
+        <footer class= "footerContainer">FOOTER</footer>
+    </body>
+</html>
